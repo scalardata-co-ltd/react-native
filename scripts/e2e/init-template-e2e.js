@@ -117,7 +117,8 @@ async function initNewProjectFromSource(
 
     console.log('Running react-native init without install');
     execSync(
-      `node @react-native-community/cli init ${projectName} \
+      `npx @react-native-community/cli init ${projectName} \
+        --directory ${directory} \
         --template @react-native-community/template \
         --verbose \
         --pm npm \
